@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.log
+*.bak
+.venv/
+venv/
+.env
+
+# account identity (contains personal info) -- keep local, never commit
+account.json
