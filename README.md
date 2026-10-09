@@ -144,3 +144,6 @@ S→C  task-finished / Stopped
 ## 免责声明
 
 仅供学习研究。
+
+## 彩蛋：鹈鹕骑车测试效果
+![alt text](image.png)
