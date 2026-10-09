@@ -66,15 +66,19 @@ print(json.loads(urllib.request.urlopen(req, timeout=90).read()))
 |------|------|------|
 | `XIAODE_RANDOM_DIU` | `0` | `1` = 每次请求随机化设备 ID（URL `diu/adiu` + payload `adiu`），隔离上游设备级记忆 |
 | `XIAODE_KEEP_ACCOUNT` | `0` | `1` = 从 `account.json` 注入账号字段（默认剥离 PII） |
-| `XIAODE_MAX_TEXT` | `2000` | 发给上游的 `text` 最大字符数（见「已知限制」） |
+| `XIAODE_MAX_TEXT` | `2000` | 发给上游的 `text` 最大字符数（上游硬上限约 2000，超出会 `task-failed` 并断连） |
 
 ## 文件
 
 | 文件 | 说明 |
 |------|------|
 | `xiaode_openai.py` | 服务主体（HTTP 服务 + WS 协议封装 + tool call） |
+| `frames/runtask.json` | `run-task`（`directive:"Start"`）帧模板 |
+| `frames/respond.json` | `continue-task`（`directive:"RequestToRespond"`）帧模板 |
 | `account.json` | 账号身份（`uid`/昵称/手机号…），默认不下发，仅 `XIAODE_KEEP_ACCOUNT=1` 时注入 |
 | `aos_sign.py` | 高德 AOS 通用请求签名的离线复现（`sign = MD5(...).upper()`） |
+
+> 服务是**自包含**的：`frames/` 随仓库一起分发，克隆本目录即可直接运行，不依赖仓库外的任何文件。
 
 ## 工作原理
 

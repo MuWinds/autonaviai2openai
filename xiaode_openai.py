@@ -39,8 +39,9 @@ import asyncio, json, logging, os, re, ssl, sys, time, traceback, uuid
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
-TPL = os.path.join(ROOT, "tools")
+# Protocol frame templates live INSIDE this repo (server/frames/) so the server is
+# self-contained: cloning just server/ is enough to run it.
+TPL = os.path.join(HERE, "frames")
 
 # ---------------- logging ----------------
 LOG_FILE = os.path.join(HERE, "xiaode.log")
@@ -63,8 +64,14 @@ APPKEY = "672ec8ef"
 WORKSPACE = "ws-hus10xw8wl0fx0ez"
 DIP = "10880"
 DIV = "ANDH170000"
+# `tid` + `sign` are validated by the upstream and are BOUND together, so they must
+# be sent exactly as captured. The `tid` here is an anonymous per-install device
+# token (the capture was not logged in), not an account identity.
 TID = "asetDgCP8Y8DAJD5O1LEzGy1"
-DIU = "wbfhcffi7f55043d8376210dd73cd0"
+# Device id (`diu`/`adiu`): the upstream does NOT validate it, so we use a neutral
+# placeholder -- the real captured device id has been removed for privacy.
+# Set XIAODE_RANDOM_DIU=1 to use a fresh random id per request instead.
+DIU = "wbfhcffi0000000000000000000000"
 SDKVER = "V1.4.7-02E-202608252026"
 SIGN = "a67286934fd4440ee701baec6b6298ce"
 KEEPALIVE = "60"
@@ -130,8 +137,8 @@ def build_url(csid, diu):
     return "wss://%s%s?%s" % (HOST, PATH, q)
 
 
-_runtask_tpl = json.load(open(os.path.join(TPL, "replay_runtask.json"), encoding="utf-8"))
-_respond_tpl = json.load(open(os.path.join(TPL, "replay_respond.json"), encoding="utf-8"))
+_runtask_tpl = json.load(open(os.path.join(TPL, "runtask.json"), encoding="utf-8"))
+_respond_tpl = json.load(open(os.path.join(TPL, "respond.json"), encoding="utf-8"))
 
 
 def build_frames(text, task_id, dialog_id, csid, conversation_id, diu):

@@ -1,0 +1,154 @@
+{
+    "header": {
+        "action": "run-task",
+        "streaming": "duplex",
+        "task_id": "c8a168f1ab344a3681f26ba2a54f7ad9"
+    },
+    "payload": {
+        "function": "generation",
+        "input": {
+            "app_id": "amap_demo_omni",
+            "dialog_id": "cd087a36-ce74-44e9-9573-35b7361746b9",
+            "directive": "Start",
+            "workspace_id": "ws-hus10xw8wl0fx0ez"
+        },
+        "model": "multimodal-dialog",
+        "parameters": {
+            "biz_params": {
+                "context": {
+                    "app": {
+                        "code": "000",
+                        "version": "ANDH170000"
+                    },
+                    "bluetooth": "unconnected",
+                    "client_network_class": "4",
+                    "custom": {
+                        "autonav": {
+                            "addr_poi_merge": "true",
+                            "agent_id": "amapAgent",
+                            "ai_list_physical_height": "0",
+                            "aichat_context_params": "{\"schema_version\":2,\"current_page\":\"OTHER\",\"current_page_raw\":\"com.autonavi.bundle.ainative.page.AGenUIChatPage\",\"dwell_ms\":960437,\"battery_level\":89,\"is_charging\":false,\"network_type\":\"WIFI\",\"bluetooth_connected\":false,\"bluetooth_device\":\"\",\"platform\":\"Android\",\"updated_elapsed_ms\":1356763}",
+                            "ajxVersion": "nearby:238212;scenic_area:228450;poi:238806;walkman:231931;idqplus:231931;idqmax:234029;search:238806;search_around:225478;hotel:234809;landing_page:238503;tour:231931;search_cloud:055716;poi_cloud:055716;favorites:234809;nearby_cloud:231931;comment:234809;order_center:238806;information_im:238709;car:234731;residential:234029;toolpro:234731;life:234517;ecology:238806;template_map:220602;plague_map:223567;search_home:238806;hkf:235105;c3_lowcode:233825;small_biz:233816;globalvoice:238215;taxi:090800;editor:234731;venue:238707;basemap_feedback:234697;common_feedback:234697",
+                            "app_env": "publish",
+                            "area_code": "CHN",
+                            "bffVoBizParams": "{\"name\":\"amap_bundle_globalvoice\",\"version\":\"238215\",\"pageId\":\"VUIService.js\"}",
+                            "c2ReqParamsStr": "{\"c2AIBizVersion\":\"090800\",\"subChannel\":\"gaode_xiaogao\"}",
+                            "character_id": "111",
+                            "citysuggestion": "false",
+                            "cluster_state": "5",
+                            "dialog_params": "{\"extend_info\":{\"dialog_type\":\"text\"},\"genui_output_type\":\"native\"}",
+                            "dibv": "2005",
+                            "direct_jump": "true",
+                            "div": "ANDH170000",
+                            "enable_follow_up_cache": "1",
+                            "favorite_set": "0",
+                            "genui_output_type": "native",
+                            "globalvoiceBizVersion": "238215",
+                            "gps_angle": "-1",
+                            "guide_from": "schema_jump-newsearch-ai_input",
+                            "guide_query_id": "",
+                            "internal_from": "newsearch-ai_input",
+                            "isAiSearchIntegrationEnable": "1",
+                            "isHorizontal": "0",
+                            "isMsgTabIntegrationEnable": "1",
+                            "isSession": "1",
+                            "isSessionSet": "0",
+                            "is_ai_native": "1",
+                            "is_ai_note_opened": "1",
+                            "is_classify": "true",
+                            "llm_exp_switch": "1",
+                            "llm_vui_version": "2",
+                            "loc_strict": "false",
+                            "local_travel_tool": "0",
+                            "memory_switch": "on",
+                            "navi_broad_type": "7",
+                            "need_codepoint": "true",
+                            "need_magicbox": "false",
+                            "need_parkinfo": "true",
+                            "need_recommend": "1",
+                            "need_utd": "false",
+                            "nui_sdm_version": "0",
+                            "pagenum": "1",
+                            "pagesize": "10",
+                            "personal_switch": "on",
+                            "qii": "true",
+                            "query_acs": "false",
+                            "query_mode": "normal",
+                            "query_type": "TQUERY",
+                            "retry_recognizing": "0",
+                            "route_params": "{\"route_settings\":[{\"trans_type\":\"0\",\"strategy\":\"1\"},{\"trans_type\":\"7\",\"strategy\":\"1\"},{\"trans_type\":\"11\",\"strategy\":\"1\"},{\"trans_type\":\"12\",\"strategy\":\"1\"}],\"multi_plate\":[{\"type\":\"0\",\"plate\":\"京HD6408\"}],\"vehicle\":[{\"plateNum\":\"京HD6408\",\"vehicleType\":1,\"carType\":0,\"vehicleCode\":\"\",\"vehicleMsg\":\"帝豪\",\"vehicleLogo\":\"https://store.is.autonavi.com/showpic/2426b49998b085ed6f83ad9c570af8c7\",\"engineNum\":\"\",\"frameNum\":\"\",\"telphone\":\"\",\"validityPeriod\":\"\",\"ocrRequestId\":\"\",\"violationReminder\":0,\"checkReminder\":0,\"limitReminder\":0,\"truckAvoidWeightLimit\":0,\"createTime\":1784785244,\"updateTime\":1784785244,\"vehiclePowerType\":3,\"chargingRange\":0,\"chargingDistance\":0,\"brandInfo\":{\"brand\":\"吉利\",\"line\":\"帝豪\",\"displacement\":\"1.5T\",\"year\":\"2026款\",\"saleName\":\"2026款 第5代 1.5T DCT尊贵型\",\"carBrandId\":\"254860\",\"carSeriesId\":\"686803\",\"carSeriesPicUrl\":[\"https://store.is.autonavi.com/showpic/9f5b0da408eec7192087febf54857f4b\"],\"gearType\":\"2\",\"carLevel\":\"COMPACT_CAR\",\"fuelTypeName\":\"1\",\"roz\":\"92号\",\"carLength\":\"4815\",\"carWidth\":\"1885\",\"carHeight\":\"1480\",\"officialMpg\":\"5.95\",\"tankCapacity\":\"58\",\"carWeight\":\"1405\",\"totalMass\":\"1820\",\"marketDate\":\"2025-11-06\",\"officialPrice\":\"8.79\",\"modelStatus\":\"1\",\"brandFrom\":\"common_type_selector\",\"carModelId\":\"686822\"},\"seatNum\":0,\"mileage\":0,\"etcStatus\":1,\"etcNumber\":\"\",\"truckType\":0,\"length\":\"\",\"width\":\"\",\"height\":\"\",\"capacity\":\"\",\"weight\":\"\",\"axleNum\":\"\",\"emission\":0,\"plateColor\":0,\"purpose\":0,\"foc\":\"\",\"extraInfo\":\"\"}],\"vers\":\"5.1\"}",
+                            "scenario": "1",
+                            "scene_id": "1168754472046821415",
+                            "scene_idx": "0",
+                            "screen_physical_height": "300",
+                            "screen_physical_width": "900",
+                            "search_operate": "1",
+                            "show_thinking_text": "1",
+                            "smbVersion": "1700",
+                            "sort_rule": "0",
+                            "specialpoi": "0",
+                            "speed": "0.0204",
+                            "stepid": "640",
+                            "superid": "",
+                            "transfer_filter_flag": "0",
+                            "transfer_pdheatmap": "0",
+                            "tts_package_cn_name": "小高老师",
+                            "tts_package_id": "123",
+                            "use_chat_model": "1",
+                            "use_sse_pipline": "0",
+                            "utd_sceneid": "101000",
+                            "vehicle_infos": "[{\"violationReminder\":0,\"truckType\":0,\"purpose\":0,\"vehiclePowerType\":3,\"capacity\":\"\",\"plateColor\":0,\"validityPeriod\":\"\",\"emission\":0,\"carType\":0,\"seatNum\":0,\"axleNum\":\"\",\"checkReminder\":0,\"limitReminder\":0,\"brandInfo\":{\"carSeriesPicUrl\":[\"https:\\/\\/store.is.autonavi.com\\/showpic\\/9f5b0da408eec7192087febf54857f4b\"],\"year\":\"2026款\",\"carModelId\":\"686822\",\"line\":\"帝豪\",\"carBrandId\":\"254860\",\"carWidth\":\"1885\",\"modelStatus\":\"1\",\"carLevel\":\"COMPACT_CAR\",\"carWeight\":\"1405\",\"gearType\":\"2\",\"totalMass\":\"1820\",\"saleName\":\"2026款 第5代 1.5T DCT尊贵型\",\"officialMpg\":\"5.95\",\"carSeriesId\":\"686803\",\"officialPrice\":\"8.79\",\"fuelTypeName\":\"1\",\"carHeight\":\"1480\",\"carLength\":\"4815\",\"displacement\":\"1.5T\",\"marketDate\":\"2025-11-06\",\"tankCapacity\":\"58\",\"roz\":\"92号\",\"brand\":\"吉利\",\"brandFrom\":\"common_type_selector\"},\"vehicleType\":1,\"chargingDistance\":0,\"mileage\":0,\"height\":\"\",\"vehicleLogo\":\"https:\\/\\/store.is.autonavi.com\\/showpic\\/2426b49998b085ed6f83ad9c570af8c7\",\"etcStatus\":1,\"vehicleMsg\":\"帝豪\",\"engineNum\":\"\",\"length\":\"\",\"vehicleCode\":\"\",\"weight\":\"\",\"frameNum\":\"\",\"updateTime\":1784785244,\"plateNum\":\"京HD6408\",\"etcNumber\":\"\",\"chargingRange\":0,\"createTime\":1784785244,\"ocrRequestId\":\"\",\"telphone\":\"\",\"truckAvoidWeightLimit\":0,\"width\":\"\",\"foc\":\"\",\"extraInfo\":\"\"}]",
+                            "version": "2.19",
+                            "via_poi_num": "0",
+                            "wakeup_status": "1"
+                        },
+                        "dynamic_list": "",
+                        "wakeup_mode": "text2action"
+                    },
+                    "device": {},
+                    "network": {
+                        "ip": "1.1.1.1",
+                        "type": "4"
+                    },
+                    "sdk": {
+                        "language": "cpp",
+                        "name": "voicechat",
+                        "version": "V1.4.7-02E-202608252026"
+                    }
+                },
+                "user_defined_params": {
+                    "app_key": "672ec8ef"
+                }
+            },
+            "client_info": {
+                "user_id": "asetDgCP8Y8DAJD5O1LEzGy1"
+            },
+            "dialog_attributes": {
+                "prompt": ""
+            },
+            "downstream": {
+                "audio_format": "raw-opus",
+                "debug": true,
+                "intermediate_text": "transcript,dialog",
+                "sample_rate": 24000,
+                "type": "Audio",
+                "voice": "123"
+            },
+            "upstream": {
+                "audio_format": "raw-opus",
+                "enable_server_vad_start": false,
+                "kws_encoder_type": "feat",
+                "mode": "duplex",
+                "type": "AudioOnly",
+                "vocabulary": {
+                    "张三": 2,
+                    "李四": 2,
+                    "王二麻子": 2
+                },
+                "wwv_timeout": 500
+            }
+        },
+        "task": "multimodal-generation",
+        "task_group": "aigc"
+    }
+}
